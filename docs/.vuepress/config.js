@@ -1,9 +1,15 @@
 import { defineUserConfig, defaultTheme } from "vuepress";
+import { gitPlugin } from "@vuepress/plugin-git";
 
 export default defineUserConfig({
   lang: "ja-JP",
   title: "ImakiroOfficial",
   description: "App",
+  plugins: [
+    gitPlugin({
+      contributors: false,
+    }),
+  ],
   theme: defaultTheme({
     // default theme config
     navbar: [
