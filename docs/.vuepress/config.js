@@ -5,6 +5,8 @@ export default defineUserConfig({
   lang: "ja-JP",
   title: "ImakiroOfficial",
   description: "App",
+  // dest: "docs/",
+  // base: "/Imakiro-site/",
   plugins: [
     gitPlugin({
       contributors: false,
